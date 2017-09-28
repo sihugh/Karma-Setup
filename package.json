@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "karma": "^0.13.9"
+    "karma": "^0.13.9",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -17,8 +18,11 @@
     "merge2": "^0.3.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
