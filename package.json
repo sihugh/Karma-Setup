@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "karma": "^0.13.9"
+    "karma": "^2.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
